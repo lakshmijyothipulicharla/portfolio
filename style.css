@@ -113,23 +113,20 @@ img {
 }
 /* ===== Hero ===== */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: var(--hero-text);
   position: relative;
   overflow: hidden;
+  margin-top:40px;
 }
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.2);
-}
-#my-image{
-    height:400px;
-    border-radius:50%;
 }
 .hero .container {
   position: relative;
@@ -213,15 +210,16 @@ img {
 .social-links a:hover {
   color: var(--primary);
 }
-/* .hero-image {
+/*.hero-image {
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
-} */
+}*/
 .hero-image img {
-  width: 100%;
-  height:auto;
+  width: 70%;
+  height:400px;
   object-fit: cover;
+  border-radius:50%;
 }
 .hero-image .overlay {
   position: absolute;
